@@ -11,12 +11,23 @@ db.init_app(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="MLH Fellow", url="localhost:5000")
+    return render_template('index.html', title="Ayana's Blog", url=os.getenv("URL"))
 
 @app.route('/health')
 def health():
    return "Works"
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 @app.route('/register', methods=('GET', 'POST'))
 def register():

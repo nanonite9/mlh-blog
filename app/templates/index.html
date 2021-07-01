@@ -16,25 +16,70 @@
 
     <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <title>{{ title }}</title>
 </head>
 
 <body>
-    <header class="nav-bar">
-        <div class="nav-content">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
-                </div>
-            </a>
-        </div>
-    </header>
+<div class = "background">
+    {% include 'header.html' %}
 
-    <div class="profile">
+        <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+               <div class="profile">
         <div id="profile-picture" class="profile-picture">
-            <img src="./static/img/logo.jpg">
+            <img src="./static/img/20210611_092832.jpg">
+
+            <div id="projects-title">
+                About Me
+            </div>
+            
+            <div id="about">
+              Hi! I'm Ayana (ə ˈjeɪnə). I am a recent graduate from McMaster University where I specialized in Computer Science & Mathematics. I like to practice my French and I am learning other languages as I go. In my free time, I like to bike, do calisthenics, and make my friends laugh :) Check out some of my projects below.
+                Find me on <a href="https://linkedin.com/in/ayana-n/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, and check out my work on <a href="https://github.com/nanonite9" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            
+            </div>
+        <div id="projects-title">
+              <h1>
+                <span id="typed-strings">
+                  <span>Hello!</span>
+                  <span>I'm Ayana</span>
+                  <span>Welcome to my portfolio!</span>
+                  <!-- <span>Working as a Freelancer</span> -->
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
         </div>
-        <h1>{{ title }}</h1>
+      </div>
     </div>
+      </div>
+</div>
+      </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</div>
+<footer class="footer-container text-center">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+            <p>
+              Made with Flask and 💜 by <a href="https://github.com/ayredkklc" target="_blank" rel="noopener noreferrer">Derya</a> and Ayana from Toronto, ON. <i class="fas fa-map-marker-alt"></i>
+          </p>
+          <h4>
+              <a href="https://github.com/nanonite9" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"> </a></i>
+              <a href="https://linkedin.com/in/ayana-n/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          </h4>
+        </div>
+      </div>
+  </div>
+</footer>
 </body>
+
 </html>
